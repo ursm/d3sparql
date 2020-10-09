@@ -1,0 +1,24 @@
+{
+  "name": "@ktym/d3sparql",
+  "version": "0.0.0",
+  "description": "JavaScript library for executing SPARQL query and transforming resulted JSON for visualization in D3.js.",
+  "author": "Toshiaki Katayama <ktym@dbcls.jp>",
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/ktym/d3sparql",
+  "repository": "https://github.com/ktym/d3sparql.git",
+  "module": "src/d3sparql.mjs",
+  "main": "dist/d3sparql.cjs",
+  "browser": "dist/d3sparql.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "rollup --config"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "rollup": "^2.29.0"
+  },
+  "dependencies": {
+    "d3": "^3.5.17"
+  }
+}

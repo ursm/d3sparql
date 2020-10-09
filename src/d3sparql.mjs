@@ -7,6 +7,8 @@
 //   Initial version: 2013-01-28
 //
 
+import d3 from "d3";
+
 var d3sparql = {
   version: "d3sparql.js version 2018-05-04",
   debug: false  // set to true for showing debug information
@@ -2046,5 +2048,4 @@ d3sparql.frameheight = function(height) {
   d3.select(self.frameElement).style("height", height + "px")
 }
 
-/* for Node.js */
-//module.exports = d3sparql
+export default d3sparql;
